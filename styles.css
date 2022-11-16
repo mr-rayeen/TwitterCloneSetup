@@ -18,3 +18,61 @@ body {
   overflow-x: hidden;
   display: flex;
 }
+
+/* Left sidebar */
+.left-sidebar {
+  position: sticky;
+  width: 25vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--background-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; 
+}
+
+.links-flex {
+  display: flex;
+  align-items: flex-start;
+  margin: .5rem 1rem;
+  cursor: pointer;
+  width: 16rem;
+  flex-direction: column;
+}
+.white-logo {
+  padding: 1rem;
+  border-radius: 50%;
+  height: 2rem;
+}
+.white-logo:hover {
+  background-color: var(--background-grey);
+}
+.twitter-white-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.link-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem ;
+  padding-right: 2rem;
+  height: 3.7rem;
+}
+
+.link-flex:hover {
+  background-color: var(--background-grey);
+  border-radius: 2rem;
+}
+.link-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.link-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
