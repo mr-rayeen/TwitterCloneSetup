@@ -77,9 +77,69 @@ body {
   font-weight: 600;
 }
 
+/* Middle section */
+.middle-section {
+  width: 40vw;
+  background-color: var(--black);
+
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--black);
+}
+
+.search-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.3rem;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+  padding: 1rem;
+  
+}
+
+.search-bar {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--background-grey);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.search-bar input {
+  flex: 1;
+  background-color: var(--background-grey);
+  border: none;
+  color: var(--light-grey);
+  font-family: "Chirp", sans-serif;
+  font-size: 1rem;
+  
+}
+
+.search-bar input:focus {
+  outline: none;
+  
+}
+
+.search-icon, .setting-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+
 /* Right Sidebar */
 .right-sidebar {
-  position: fixed;
+  position: sticky;
   width: 35vw;
   height: 100vh;
   right: 0;
@@ -154,4 +214,104 @@ body {
   min-width: 5rem;
   margin-bottom: 0;
   margin-top: 0.25rem;
+}
+
+/* Tabs */
+
+/* Style the tab */
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  background-color: var(--black);
+  margin-bottom: 0.1rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--light-grey);
+  border-bottom: 4px solid var(--black);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  flex: 1;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--background-grey);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  border-bottom: 4px solid var(--blue);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding-bottom: 4rem;
+
+}
+
+.tabs-main-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("assets/trending.png");
+  height: 380px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tabs-main-img h3 {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.tabs-main-img p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.trending-box {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--background-grey);
+}
+
+.trending-box:hover {
+  background-color: #080808;
+}
+
+.trending-heading {
+  margin: 0rem 1rem;
+  font-weight: light;
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+
+.trending-text {
+  margin: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
