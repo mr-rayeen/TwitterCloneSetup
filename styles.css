@@ -87,7 +87,8 @@ body {
 .top-nav {
   position: sticky;
   top: 0;
-  background-color: var(--black);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(0.5rem);
 }
 
 .search-flex {
@@ -224,7 +225,8 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow-x: auto;
-  background-color: var(--black);
+  /* background-color: var(--black); */
+  
   margin-bottom: 0.1rem;
 }
 
@@ -314,4 +316,130 @@ body {
   margin: 0.5rem 1rem;
   font-size: 0.9rem;
   font-weight: 800;
+}
+/*Bottom signup Div*/
+
+.bottom_signup {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--blue);
+  padding: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.bottom-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
+
+}
+
+.bottom-text p {
+  font-size: 0.8rem;
+  margin: 0.35rem 0rem;
+}
+
+.signup-btn-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.btn-outlined {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 2rem; 
+  cursor: pointer;
+}
+
+.btn-outlined:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 3rem;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .left-sidebar {
+    width: 4rem !important;
+  }
+  .link-text {
+    display: none;
+  }
+  .links-flex {
+    margin: 0;
+  }
+  .link-flex {
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  .right-sidebar {
+    width: 70%;
+  }
+
+  .middle-section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bottom-signup {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .bottom-text {
+    display: none;
+  }
+
+  .tabs-main-img {
+    height: 180px;
+    padding: 0.5rem;
+  }
+
+  .tab {
+    padding: 0rem 1rem;
+  }
+
+  .tab button {
+    min-width: 6rem;
+  }
+
+  .tabs-main-img p {
+    margin-bottom: 0.5rem;
+  }
+
+  .trending-heading,
+  .trending-text {
+    margin: 0.5rem 0.5rem;
+  }
 }
